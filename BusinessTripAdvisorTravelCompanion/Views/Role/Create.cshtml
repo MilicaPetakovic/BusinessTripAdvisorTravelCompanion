@@ -1,0 +1,17 @@
+﻿@model BusinessTripAdvisorTravelCompanion.Models.RoleViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create role</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m => Model.Name)
+        @Html.TextBoxFor(m => Model.Name, new { @class = "form-control" })
+
+    </div>
+    <input type="submit" class="btn btn-success" value="Add role" name="submit" />
+
+}
+
